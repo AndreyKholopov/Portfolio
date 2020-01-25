@@ -1,1 +1,105 @@
 @import 'config'
+
+body
+   background: $bg-color
+
+   h1,
+   h2,
+   p,
+   a,
+   i
+      font-family: $font-motserat
+      color: set-text-color($main-color)
+      text-decoration: none
+
+   .bg
+      width: 100vw
+      position: absolute
+      z-index: -2
+      left: 0
+
+      &:nth-child(1)
+         top: 0
+
+      &:nth-child(2)
+         bottom: 0
+
+   .container
+      width: 720px
+      margin: 15vh auto
+
+   header
+      .header-inner
+         background: $main-color
+         @extend %shadow-body
+         
+      .header-top
+         display: flex
+         padding: 30px         
+         
+         &__photo
+            margin-right: 15px
+
+            img
+               width: 150px
+
+         .vertical-strip
+            @extend %shadow-strip
+            margin: auto 20px
+            height: 180px
+            width: 3px
+            border-radius: 50%
+            background: rgba(0,0,0,.35)
+
+         &__text
+            margin-left: 20px
+
+            h1 
+               font-weight: 900
+               font-size: 36px
+               font-height: 39px
+               margin: 50px 20px 40px 25px
+               text-transform: uppercase
+
+            p
+               font-weight: 700
+               font-size: 22px
+               font-height: 25px
+               text-transform: uppercase
+
+      .horizontal-strip
+         @extend %shadow-strip
+         margin: 0 auto
+         height: 3px
+         width: 650px
+         border-radius: 50%
+         background: rgba(0,0,0,.35)
+
+      .header-menu
+         margin: 10px 30px 0 30px
+
+         ul
+            display: flex
+            justify-content: space-between
+            
+            li
+               width: 100%
+               display: flex
+               justify-content: center
+
+               a
+                  width: 100px
+                  height: 100px
+                  text-transform: uppercase
+                  display: flex
+                  flex-direction: column
+                  justify-content: center
+                  align-items: center
+                  
+                  i
+                     font-size: 50px
+                     margin-bottom: 10px
+
+                  
+
+@import 'mobile'
