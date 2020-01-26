@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,7 +14,7 @@
       <link rel="stylesheet" href="css/style.css" />
    </head>
    <body>
-      <img src="./images/bg-top.png" alt="bg-top" class="bg" />
+      <img src="./images/bg-top.png" alt="bg-top" class="bg-top" />
 
       <header>
          <div class="container">
@@ -58,11 +58,139 @@
                      </a></li>
                   </ul>
                </nav>
+
+               <div class="horizontal-strip"></div>
             </div>
          </div>
       </header>
 
-      <img src="./images/bg-bot.png" alt="bg-bot" class="bg" />
+      <section class="about">
+         <div class="container">
+            <div class="about-inner">
+
+               <div class="about-top">
+                  <h2 class="about-top__name">Холопов Андрей</h2>
+
+                  <div class="about-top__photo">
+                     <img
+                        src="./images/MyPhoto.png"
+                        alt="My_photo"
+                        class="photo"
+                     />
+                  </div>
+
+               </div>
+
+               <p class="about-descr">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa vero dignissimos dolor aut aliquam asperiores libero quaerat quia ea mollitia neque dolores pariatur est eveniet ut porro fugit, hic praesentium.</p>
+
+               <div class="horizontal-strip"></div>
+
+               <nav class="about-skills">
+                  <h3 class="about-skills__title">Мои навыки</h3>
+
+                  <ul>
+                     <li><i>Ps</i></li>
+                     <li><i class="fab fa-figma"></i></li>
+                     <li><i class="fab fa-html5"></i></li>
+                     <li><i class="fab fa-css3-alt"></i></li>
+                     <li><i class="fab fa-sass"></i></li>
+                     <li><i class="fab fa-js-square"></i></li>
+                     <li><i class="fab fa-react"></i></li>
+                  </ul>
+               </nav>
+            </div>
+         </div>
+      </section>
+
+      <section class="portfolio">
+         <div class="container">
+            <div class="portfolio-inner">
+               <nav class="portfolo-cells">
+                  <ul>
+                     <li>
+                        <img src="./images/Portfolio/AliExpress.jpg" alt="AliExpress">
+                        <div class="portfolo-cells__content">
+                           <h3>AliExpress</h3>
+                           <p>Интернет магазин созданный с использованием HTML5, CSS3, SASS, Javascript и адаптивом</p>
+                           <a href="https://andreykholopov.github.io/AliExpress/" target="_blank">GitHub</a>
+                        </div>
+                     </li>
+
+                     <li>
+                        <img src="./images/Portfolio/sennheiser.jpg" alt="Sennheiser">
+                        <div class="portfolo-cells__content">
+                           <h3>Sennheiser</h3>
+                           <p>Простой лэндинг созданный с использованием HTML5, CSS3, SASS, Javascript и адаптивной версткой</p>
+                           <a href="https://andreykholopov.github.io/sennheiser/" target="_blank">GitHub</a>
+                        </div>
+                     </li>
+
+                     <li>
+                        <img src="./images/Portfolio/ChikaraBar.jpg" alt="Chikara Bar">
+                        <div class="portfolo-cells__content">
+                           <h3>Chikara Bar</h3>
+                           <p>Простой лэндинг созданный с использованием HTML5, CSS3, SASS, Javascript и адаптивной версткой</p>
+                           <a href="https://andreykholopov.github.io/Chikara_Bar/" target="_blank">GitHub</a>
+                        </div>
+                     </li>
+
+                     <li>
+                        <img src="./images/Portfolio/Tetris.jpg" alt="Tetris">
+                        <div class="portfolo-cells__content">
+                           <h3>Tetris</h3>
+                           <p>Тетрис написанный с использованием чистого (без использования Фреймворков) Javascript + HTML5</p>
+                           <a href="https://andreykholopov.github.io/TETRIS/" target="_blank">GitHub</a>
+                        </div>
+                     </li>
+
+                     <li>
+                        <img src="./images/Portfolio/GraffPink.jpg" alt="GraffPink">
+                        <div class="portfolo-cells__content">
+                           <h3>GraffPink</h3>
+                           <p>Простой лэндинг с использованием HTML5, CSS3, jQuery и адаптивной версткой</p>
+                           <a href="https://andreykholopov.github.io/Graff_Pink/" target="_blank">GitHub</a>
+                        </div>
+                     </li>
+
+                     <li>
+                        <img src="./images/Portfolio/Joomhost.jpg" alt="Joomhost">
+                        <div class="portfolo-cells__content">
+                           <h3>Joomhost</h3>
+                           <p>Простой лэндинг с использованием HTML5, CSS3, jQuery и адаптивной версткой</p>
+                           <a href="https://andreykholopov.github.io/Joomhost/" target="_blank">GitHub</a>
+                        </div>
+                     </li>
+                  </ul>
+               </nav>
+            </div>
+         </div>
+      </section>
+
+      <section class="contact">
+         <div class="container">
+            <div class="contact-inner">
+               <nav class="contact-cells">
+                  <ul>
+                     <li><a href="mailto:andrey.kholopov.work@gmail.com?subject=По поводу вашего портфолио">
+                        <i class="fas fa-envelope"></i>
+                        <p>E-mail: andrey.kholopov.work@gmail.com</p>
+                     </a></li>
+                     <li><a href="tel:+89152852225">
+                        <i class="fas fa-phone"></i>
+                        <p>Телефон: 8-(915)-285-22-25</p>
+                     </a></li>
+                     <li><a href="https://github.com/AndreyKholopov?tab=repositories" target="_blank">
+                        <i class="fab fa-github-alt"></i>
+                        <p>GitHub: github.com/AndreyKholopov</p>
+                     </a></li>
+                  </ul>
+               </nav>
+            </div>
+         </div>
+      </section>
+
+      <img src="./images/bg-bot.png" alt="bg-bot" class="bg-bot" />
+      
       <script src="js/main.js"></script>
    </body>
 </html>

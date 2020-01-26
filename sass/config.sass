@@ -2,10 +2,10 @@ $bg-color: #2b3747
 $main-color: #ADA996
 $font-motserat: 'Montserrat', sans-serif
 
-%shadow-strip
+%shadow
 	box-shadow:0 1px 7px 5px rgba(0, 0, 0, .2)
 
-%shadow-body
+%clonned
 	box-shadow: 6px 6px darken($main-color, 15), 12px 12px darken($main-color, 25)
 
 @function set-text-color($color)
@@ -13,6 +13,14 @@ $font-motserat: 'Montserrat', sans-serif
 		@return #222
 	@else 
 		@return #ddd
+
+.horizontal-strip
+	@extend %shadow
+	margin: 0 auto
+	height: 3px
+	width: 650px
+	border-radius: 50%
+	background: rgba(0,0,0,.35)
 	
 //Media Query Mixins
 @mixin mediaSm
