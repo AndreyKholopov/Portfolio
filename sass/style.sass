@@ -47,47 +47,56 @@ body
       width: 720px
       margin: 0 auto
 
-   header
+   .header-top
       padding-top: 150px
+      display: flex
+      position: relative
+      z-index: -1
+      transform: scaleY(1)
+      transition: .5s ease-in-out
+
+      &__inner
+         padding: 30px
+         display: flex  
+         background: $main-color
+         margin-right: 12px
+         @extend %clonned  
+         
+      &__photo
+         margin-right: 15px
+
+         img
+            width: 150px
+
+      .vertical-strip
+         @extend %shadow
+         margin: auto 20px
+         height: 180px
+         width: 3px
+         border-radius: 50%
+         background: rgba(0,0,0,.35)
+
+      &__text
+         margin-left: 16px
+
+         h1 
+            font-weight: 900
+            font-size: 36px
+            margin: 50px 20px 50px 20px
+            text-transform: uppercase
+
+         p
+            font-weight: 700
+            font-size: 22px
+            text-transform: uppercase
+
+   header
+      transition: .5s ease-in-out
 
       .header-inner
          background: $main-color
          margin-right: 12px
-         @extend %clonned
-         
-      .header-top
-         display: flex
-         padding: 30px         
-         
-         &__photo
-            margin-right: 15px
-
-            img
-               width: 150px
-
-         .vertical-strip
-            @extend %shadow
-            margin: auto 20px
-            height: 180px
-            width: 3px
-            border-radius: 50%
-            background: rgba(0,0,0,.35)
-
-         &__text
-            margin-left: 16px
-
-            h1 
-               font-weight: 900
-               font-size: 36px
-               margin: 50px 20px 50px 20px
-               text-transform: uppercase
-
-            p
-               font-weight: 700
-               font-size: 22px
-               text-transform: uppercase
-
-      
+         @extend %clonned 
 
       .header-menu
          margin: 10px 30px
@@ -110,6 +119,10 @@ body
                   justify-content: center
                   align-items: center
 
+                  &.active
+                     background: #ddd
+                     @extend %shadow
+
                   &:hover
                      background: #ddd
                      @extend %shadow
@@ -122,8 +135,12 @@ body
                      font-weight: 700
 
    .about
-      padding-bottom: 100px
-      display: none
+      padding-bottom: 0px
+      display: flex
+      position: relative
+      transform: translateX(-2000px)
+      margin-top: -1128px
+      transition: .5s ease-in-out
 
       .about-inner
          padding-top: 10px
@@ -177,13 +194,55 @@ body
                   border: 5px solid set-text-color($main-color)
                   border-radius: 50%
                   margin: 10px
+                  cursor: pointer
+                  transition: .5s ease-in-out
+
+                  &.active
+                     width: 100%
+                     border-radius: 100px
+
+                     i
+                        display: none
+
+                        &.not-fa
+                           display: none
+
+                     .portfolo-cell__content
+                        display: flex
+                        flex-direction: column
+                        padding: 30px 50px
+
+                        h3
+                           font-size: 28px
+                           font-weight: 700
+                           margin-bottom: 12px
+                           text-align: center
 
                   i
                      font-size: 70px
+
+                     &.not-fa
+                        display: inline-block
+                        width: 1em
+                        height: 1em
+                        background: url() 0 0 no-repeat
+                        background-size: auto 100%
+                        vertical-align: middle
+
+                        &.jquery
+                           background-image: url(../fonts/sprites/jQuery_icon-icons.com_68967.svg), none
+                           
+
+                  .portfolo-cell__content
+                     display: none
                      
    .portfolio
-      padding-bottom: 100px
-      display: none
+      padding-bottom: 0px
+      display: flex
+      position: relative
+      transform: translateX(-2000px)
+      margin-top: -728px
+      transition: .5s ease-in-out
 
       .portfolio-inner
          padding-top: 10px
@@ -281,8 +340,12 @@ body
                            transform: translateY(0)
                      
    .contact
-      padding-bottom: 100px
-      display: none
+      padding-bottom: 0px
+      display: flex
+      position: relative
+      transform: translateX(-2000px)
+      margin-top: -278px
+      transition: .5s ease-in-out
 
       .contact-inner
          padding-top: 10px

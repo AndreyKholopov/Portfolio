@@ -1,8 +1,8 @@
-body .portfolio .portfolio-inner .portfolo-cells ul li, body header .header-menu ul li a:hover, body header .header-top .vertical-strip, .horizontal-strip {
+body .portfolio .portfolio-inner .portfolo-cells ul li, body header .header-menu ul li a:hover, body header .header-menu ul li a.active, body .header-top .vertical-strip, .horizontal-strip {
   box-shadow: 0 1px 7px 5px rgba(0, 0, 0, 0.2);
 }
 
-body .contact .contact-inner, body .portfolio .portfolio-inner, body .about .about-inner, body header .header-inner {
+body .contact .contact-inner, body .portfolio .portfolio-inner, body .about .about-inner, body header .header-inner, body .header-top__inner {
   box-shadow: 6px 6px #8a856c, 12px 12px #6e6a56;
 }
 
@@ -60,43 +60,53 @@ body .container {
   width: 720px;
   margin: 0 auto;
 }
-body header {
+body .header-top {
   padding-top: 150px;
+  display: flex;
+  position: relative;
+  z-index: -1;
+  transform: scaleY(1);
+  transition: 0.5s ease-in-out;
 }
-body header .header-inner {
+body .header-top__inner {
+  padding: 30px;
+  display: flex;
   background: #ADA996;
   margin-right: 12px;
 }
-body header .header-top {
-  display: flex;
-  padding: 30px;
-}
-body header .header-top__photo {
+body .header-top__photo {
   margin-right: 15px;
 }
-body header .header-top__photo img {
+body .header-top__photo img {
   width: 150px;
 }
-body header .header-top .vertical-strip {
+body .header-top .vertical-strip {
   margin: auto 20px;
   height: 180px;
   width: 3px;
   border-radius: 50%;
   background: rgba(0, 0, 0, 0.35);
 }
-body header .header-top__text {
+body .header-top__text {
   margin-left: 16px;
 }
-body header .header-top__text h1 {
+body .header-top__text h1 {
   font-weight: 900;
   font-size: 36px;
   margin: 50px 20px 50px 20px;
   text-transform: uppercase;
 }
-body header .header-top__text p {
+body .header-top__text p {
   font-weight: 700;
   font-size: 22px;
   text-transform: uppercase;
+}
+body header {
+  transition: 0.5s ease-in-out;
+}
+body header .header-inner {
+  background: #ADA996;
+  margin-right: 12px;
 }
 body header .header-menu {
   margin: 10px 30px;
@@ -119,6 +129,9 @@ body header .header-menu ul li a {
   justify-content: center;
   align-items: center;
 }
+body header .header-menu ul li a.active {
+  background: #ddd;
+}
 body header .header-menu ul li a:hover {
   background: #ddd;
 }
@@ -130,8 +143,12 @@ body header .header-menu ul li a p {
   font-weight: 700;
 }
 body .about {
-  padding-bottom: 100px;
-  display: none;
+  padding-bottom: 0px;
+  display: flex;
+  position: relative;
+  transform: translateX(-2000px);
+  margin-top: -1128px;
+  transition: 0.5s ease-in-out;
 }
 body .about .about-inner {
   padding-top: 10px;
@@ -183,13 +200,54 @@ body .about .about-inner .about-skills ul li {
   border: 5px solid #222;
   border-radius: 50%;
   margin: 10px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+body .about .about-inner .about-skills ul li.active {
+  width: 100%;
+  border-radius: 100px;
+}
+body .about .about-inner .about-skills ul li.active i {
+  display: none;
+}
+body .about .about-inner .about-skills ul li.active i.not-fa {
+  display: none;
+}
+body .about .about-inner .about-skills ul li.active .portfolo-cell__content {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 50px;
+}
+body .about .about-inner .about-skills ul li.active .portfolo-cell__content h3 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  text-align: center;
 }
 body .about .about-inner .about-skills ul li i {
   font-size: 70px;
 }
-body .portfolio {
-  padding-bottom: 100px;
+body .about .about-inner .about-skills ul li i.not-fa {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background: url() 0 0 no-repeat;
+  background-size: auto 100%;
+  vertical-align: middle;
+}
+body .about .about-inner .about-skills ul li i.not-fa.jquery {
+  background-image: url(../fonts/sprites/jQuery_icon-icons.com_68967.svg), none;
+}
+body .about .about-inner .about-skills ul li .portfolo-cell__content {
   display: none;
+}
+body .portfolio {
+  padding-bottom: 0px;
+  display: flex;
+  position: relative;
+  transform: translateX(-2000px);
+  margin-top: -728px;
+  transition: 0.5s ease-in-out;
 }
 body .portfolio .portfolio-inner {
   padding-top: 10px;
@@ -284,8 +342,12 @@ body .portfolio .portfolio-inner .portfolo-cells ul li:hover .portfolo-cells__co
   transform: translateY(0);
 }
 body .contact {
-  padding-bottom: 100px;
-  display: none;
+  padding-bottom: 0px;
+  display: flex;
+  position: relative;
+  transform: translateX(-2000px);
+  margin-top: -278px;
+  transition: 0.5s ease-in-out;
 }
 body .contact .contact-inner {
   padding-top: 10px;
