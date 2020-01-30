@@ -217,6 +217,7 @@ body .about .about-inner .about-skills ul li.active .portfolo-cell__content {
   display: flex;
   flex-direction: column;
   padding: 30px 50px;
+  text-align: justify;
 }
 body .about .about-inner .about-skills ul li.active .portfolo-cell__content h3 {
   font-size: 28px;
@@ -237,6 +238,9 @@ body .about .about-inner .about-skills ul li i.not-fa {
 }
 body .about .about-inner .about-skills ul li i.not-fa.jquery {
   background-image: url(../fonts/sprites/jQuery_icon-icons.com_68967.svg), none;
+}
+body .about .about-inner .about-skills ul li i.not-fa.blender {
+  background-image: url(../fonts/sprites/blender.svg);
 }
 body .about .about-inner .about-skills ul li .portfolo-cell__content {
   display: none;

@@ -14,8 +14,6 @@ const homePageStyle = getComputedStyle(homePage);
 const aboutPageStyle = getComputedStyle(aboutPage);
 const portfolioPageStyle = getComputedStyle(portfolioPage);
 const contactPageStyle = getComputedStyle(contactPage);
-const headerPageStyle = getComputedStyle(headerPage);
-
 
 const chooseCategory = (event) => {
    event.preventDefault();
@@ -73,11 +71,11 @@ const displaySection = (item) => {
       case 'about':
          homePage.style.transform = 'scaleY(0)';
 
-         headerPage.style.transform = 'translateY(-248px)';
+         headerPage.style.transform = `translateY(-${homePageStyle.getPropertyValue("height")})`;
 
          aboutPage.style.transform = 'translateX(0px)';
          aboutPage.style.paddingBottom = '100px';
-         aboutPage.style.marginTop = '-248px';
+         aboutPage.style.marginTop = `-${homePageStyle.getPropertyValue("height")}`;
 
          portfolioPage.style.transform = 'translateX(-2000px)';
          portfolioPage.style.paddingBottom = '0px';
@@ -92,7 +90,7 @@ const displaySection = (item) => {
       case 'portfolio':
          homePage.style.transform = 'scaleY(0)';
 
-         headerPage.style.transform = 'translateY(-248px)';
+         headerPage.style.transform = `translateY(-${homePageStyle.getPropertyValue("height")})`;
 
          aboutPage.style.transform = 'translateX(2000px)';
          aboutPage.style.paddingBottom = '0px';
@@ -100,7 +98,7 @@ const displaySection = (item) => {
 
          portfolioPage.style.transform = 'translateX(0px)';
          portfolioPage.style.paddingBottom = '100px';
-         portfolioPage.style.marginTop = '-248px';
+         portfolioPage.style.marginTop = `-${homePageStyle.getPropertyValue("height")}`;
          
          contactPage.style.transform = 'translateX(-2000px)';
          contactPage.style.paddingBottom = '0px';
@@ -111,7 +109,7 @@ const displaySection = (item) => {
       case 'contact':
          homePage.style.transform = 'scaleY(0)';
 
-         headerPage.style.transform = 'translateY(-248px)';
+         headerPage.style.transform = `translateY(-${homePageStyle.getPropertyValue("height")})`;
 
          aboutPage.style.transform = 'translateX(2000px)';
          aboutPage.style.paddingBottom = '0px';
@@ -123,7 +121,7 @@ const displaySection = (item) => {
          
          contactPage.style.transform = 'translateX(0px)';
          contactPage.style.paddingBottom = '100px';
-         contactPage.style.marginTop = '-248px';
+         contactPage.style.marginTop = `-${homePageStyle.getPropertyValue("height")}`;
          
          break;
    }   
