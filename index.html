@@ -16,6 +16,47 @@
    <body>
       <img src="./images/bg-top.png" alt="bg-top" class="bg-top" />
 
+      <section class="setings">
+         <div class="container">
+            <div class="setings__inner">
+               <a href="#" class="setings-button">
+                  <i class="fas fa-cog"></i>
+               </a>
+
+               <div class="setings-window">
+                  <div class="setings-lang">
+                     <label for="check-lang"></label>
+                     <input type="checkbox" id="check-lang" class="setings-lang__check" onchange="changeLang()">
+                     <span class="ru">RU</span>
+                     <span class="en">EN</span>
+                  </div>
+               
+                  <div class="vertical-strip"></div>
+
+                  <div class="setings-light">
+                     <label for="check-light"></label>
+                     <input type="checkbox" id="check-light" class="setings-light__check" onchange="changeBg()">
+                     <span class="off">OFF</span>
+                     <span class="on">ON</span>
+                  </div>
+               
+                  <div class="vertical-strip"></div>
+
+                  <div class="setings-color">
+                     <ul>
+                        <li><button class="setings-color__button" onclick="changeMainColor('#ADA996')"></button></li>
+                        <li><button class="setings-color__button" onclick="changeMainColor('#c5c0d1')"></button></li>
+                        <li><button class="setings-color__button" onclick="changeMainColor('#a9b0d1')"></button></li>
+                        <li><button class="setings-color__button" onclick="changeMainColor('#A8BA9A')"></button></li>
+                        <li><button class="setings-color__button" onclick="changeMainColor('#e3b48a')"></button></li>
+                        <li><button class="setings-color__button" onclick="changeMainColor('#8ebfbd')"></button></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
       <section class="header-top">
          <div class="container">
             <div class="header-top__inner">
@@ -30,8 +71,9 @@
                <div class="vertical-strip"></div>
 
                <div class="header-top__text">
-                  <h1 class="header-top__name">Холопов Андрей</h1>
-                  <p class="header-top__desc">front-end developer...</p>
+                  <h1 class="header-top__name content-RU">Холопов Андрей</h1>
+                  <h1 class="header-top__name content-EN">kholopov Andrey</h1>
+                  <p class="header-top__desc">front-end developer</p>
                </div>
             </div>
          </div>
@@ -73,7 +115,8 @@
             <div class="about-inner">
 
                <div class="about-top">
-                  <h2 class="about-top__name">Холопов Андрей</h2>
+                  <h2 class="about-top__name content-RU">Холопов Андрей</h2>
+                  <h2 class="about-top__name content-EN">kholopov Andrey</h2>
 
                   <div class="about-top__photo">
                      <img
@@ -85,19 +128,22 @@
 
                </div>
 
-               <p class="about-descr">Я Холопов Андрей Андреевич. Мне 25 лет и я веб-программист. Занимаюсь фронтенд разработкой. Имею неполное высшее. Ушел с 3 курса Московоского Авиационного Института.</p>
+               <p class="about-descr content-RU">Я Холопов Андрей Андреевич. Мне 25 лет и я веб-программист. Занимаюсь фронтенд разработкой. Имею неполное высшее. Ушел с 3 курса Московоского Авиационного Института.</p>
+               <p class="about-descr content-EN">I am Andrey Kholopov. I am 25 years old and I am a web programmer. I am engaged in front-end development. I have an incomplete higher education. Left the 3rd year of the Moscow Aviation Institute.</p>
 
                <div class="horizontal-strip"></div>
 
                <nav class="about-skills">
-                  <h3 class="about-skills__title">Мои навыки</h3>
+                  <h3 class="about-skills__title content-RU">Мои навыки</h3>
+                  <h3 class="about-skills__title content-EN">My skills</h3>
 
                   <ul>
                      <li class="about-skills__cell">
                         <i class="fab fa-html5"></i>
                         <div class="portfolo-cell__content">
                            <h3>HTML5</h3>
-                           <p>Использую HTML5 для создания сайтов и веб приложений. Использую семантику, доступность и кроссбраузерность.</p>
+                           <p class="content-RU">Использую HTML5 для создания сайтов и веб приложений. Использую семантику, доступность и кроссбраузерность.</p>
+                           <p class="content-EN">I use HTML5 to create websites and web applications. I use semantics, accessibility and cross-browser compatibility.</p>
                         </div>
                      </li>
 
@@ -105,7 +151,8 @@
                         <i class="fab fa-css3-alt"></i>
                         <div class="portfolo-cell__content">
                            <h3>CSS3</h3>
-                           <p>Использую CSS3 для создания сайтов и веб приложений. Использую Flex и Grid свойства. Умею делать CSS анимации.</p>
+                           <p class="content-RU">Использую CSS3 для создания сайтов и веб приложений. Использую Flex и Grid свойства. Умею делать CSS анимации.</p>
+                           <p class="content-EN">I use CSS3 to create websites and web applications. I use Flex and Grid properties. I am able to do CSS animations.</p>
                         </div>
                      </li>
 
@@ -113,7 +160,8 @@
                         <i class="fab fa-sass"></i>
                         <div class="portfolo-cell__content">
                            <h3>SASS</h3>
-                           <p>Использую SASS для создания сайтов и веб приложений. Использую переменные, вложенности, миксины и функции.</p>
+                           <p class="content-RU">Использую SASS для создания сайтов и веб приложений. Использую переменные, вложенности, миксины и функции.</p>
+                           <p class="content-EN">I use SASS to create sites and web applications. I use variables, nesting, mixins and functions.</p>
                         </div>
                      </li>  
 
@@ -121,7 +169,8 @@
                         <i class="fab fa-bootstrap"></i>
                         <div class="portfolo-cell__content">
                            <h3>Bootstrap</h3>
-                           <p>Использую Bootstrap для создания сайтов и веб приложений. Умею работать с разметкой и контейнерами.</p>
+                           <p class="content-RU">Использую Bootstrap для создания сайтов и веб приложений. Умею работать с разметкой и контейнерами.</p>
+                           <p class="content-EN">I use Bootstrap to create websites and web applications. I am able to work with markup and containers.</p>
                         </div>
                      </li>  
 
@@ -129,7 +178,8 @@
                         <i class="fab fa-js-square"></i>
                         <div class="portfolo-cell__content">
                            <h3>JavaScript</h3>
-                           <p>Использую JavaScript для создания скриптов и веб приложений. Умею работать с DOM деревом. Знаю принципы ООП и паттерны.</p>
+                           <p class="content-RU">Использую JavaScript для создания скриптов и веб приложений. Умею работать с DOM деревом. Знаю принципы ООП и паттерны.</p>
+                           <p class="content-EN">I use JavaScript to create scripts and web applications. I am able to work with the DOM tree. I know the principles of OOP and patterns.</p>
                         </div>
                      </li>
 
@@ -137,7 +187,8 @@
                         <i class="not-fa jquery"></i>
                         <div class="portfolo-cell__content">
                            <h3>jQuery</h3>
-                           <p>Использую jQuery для создания скриптов и веб приложений. Умею работать с DOM деревом и AJAX.</p>
+                           <p class="content-RU">Использую jQuery для создания скриптов и веб приложений. Умею работать с DOM деревом и AJAX.</p>
+                           <p class="content-EN">I use jQuery to create scripts and web applications. I am able to work with DOM tree and AJAX.</p>
                         </div>
                      </li>
 
@@ -145,7 +196,8 @@
                         <i class="fab fa-react"></i>
                         <div class="portfolo-cell__content">
                            <h3>React</h3>
-                           <p>Использую React для создания скриптов и веб приложений. Умею работать с контекстом, Hooks и Lazy.</p>
+                           <p class="content-RU">Использую React для создания скриптов и веб приложений. Умею работать с контекстом, Hooks и Lazy.</p>
+                           <p class="content-EN">I use React to create scripts and web applications. I am able to work with context, Hooks and Lazy.</p>
                         </div>
                      </li>
 
@@ -153,7 +205,8 @@
                         <i class="fab fa-git"></i>
                         <div class="portfolo-cell__content">
                            <h3>Git</h3>
-                           <p>Использую Git для управдения версиями сайтов и веб приложений. Умею пушить, пулить и работать с ветками(ветвление, переключение и слияние).</p>
+                           <p class="content-RU">Использую Git для управдения версиями сайтов и веб приложений. Умею пушить, пулить и работать с ветками(ветвление, переключение и слияние).</p>
+                           <p class="content-EN">I use Git for version control of sites and web applications. I am able to push, pull and work with branches (branching, switching and merging).</p>
                         </div>
                      </li>
 
@@ -161,7 +214,8 @@
                         <i>Ps</i>
                         <div class="portfolo-cell__content">
                            <h3>Adobe Photoshop</h3>
-                           <p>Использую Adobe Photoshop для работы с PSD макетами и для редактирования изображений.</p>
+                           <p class="content-RU">Использую Adobe Photoshop для работы с PSD макетами и для редактирования изображений.</p>
+                           <p class="content-EN">I use Adobe Photoshop to work with PSD layouts and for editing images.</p>
                         </div>
                      </li>
 
@@ -169,7 +223,8 @@
                         <i class="fab fa-figma"></i>
                         <div class="portfolo-cell__content">
                            <h3>Figma</h3>
-                           <p>Использую Figma для создания макетов сайтов.</p>
+                           <p class="content-RU">Использую Figma для создания макетов сайтов.</p>
+                           <p class="content-EN">I use Figma to create site layouts.</p>
                         </div>
                      </li> 
                      
@@ -177,15 +232,18 @@
                         <i class="not-fa blender"></i>
                         <div class="portfolo-cell__content">
                            <h3>Blender</h3>
-                           <p>Использую Blender для создания 3D моделей. Умею скульптить, текстурировать, выпекать 3D модели.</p>
+                           <p class="content-RU">Использую Blender для создания 3D моделей. Умею скульптить, текстурировать, выпекать 3D модели.</p>
+                           <p class="content-EN">I use Blender to create 3D models. I am able to sculpt, texture, bake 3D models.</p>
                         </div>
                      </li>
                      
                      <li class="about-skills__cell">
                         <i class="fas fa-language"></i>
                         <div class="portfolo-cell__content">
-                           <h3>Английский язык</h3>
-                           <p>Уровень знания английского языка Intermediate. Могу читать документацию на английском.</p>
+                           <h3 class="content-RU">Английский язык</h3>
+                           <h3 class="content-EN">Russian language</h3>
+                           <p class="content-RU">Уровень знания английского языка Intermediate. Могу читать документацию на английском.</p>
+                           <p class="content-EN">Level of knowledge of the Russian language Mastery or proficiency.</p>
                         </div>
                      </li> 
                   </ul>
@@ -203,10 +261,12 @@
                         <img src="./images/Portfolio/AliExpress.jpg" alt="AliExpress">
                         <div class="portfolo-cells__content">
                            <h3>AliExpress</h3>
-                           <p>Интернет магазин созданный с использованием HTML5, CSS3, SASS, Javascript и адаптивом</p>
+                           <p class="content-RU">Интернет магазин созданный с использованием HTML5, CSS3, SASS, Javascript и адаптивом</p>
+                           <p class="content-EN">Online store created using HTML5, CSS3, SASS, Javascript and an adaptive</p>
                            <div class="buttons">
                               <a href="https://github.com/AndreyKholopov/AliExpress" target="_blank">GitHub</a>
-                              <a href="https://andreykholopov.github.io/AliExpress/" target="_blank">Открыть</a>
+                              <a href="https://andreykholopov.github.io/AliExpress/" class="content-RU" target="_blank">Открыть</a>
+                              <a href="https://andreykholopov.github.io/AliExpress/" class="content-EN" target="_blank">Link</a>
                            </div> 
                         </div>
                      </li>
@@ -215,10 +275,12 @@
                         <img src="./images/Portfolio/sennheiser.jpg" alt="Sennheiser">
                         <div class="portfolo-cells__content">
                            <h3>Sennheiser</h3>
-                           <p>Простой лэндинг созданный с использованием HTML5, CSS3, SASS, Javascript и адаптивной версткой</p>
+                           <p class="content-RU">Простой лэндинг созданный с использованием HTML5, CSS3, SASS, Javascript и адаптивной версткой</p>
+                           <p class="content-EN">Simple landing page created using HTML5, CSS3, SASS, Javascript and adaptive layout</p>
                            <div class="buttons">
                               <a href="https://github.com/AndreyKholopov/sennheiser" target="_blank">GitHub</a>
-                              <a href="https://andreykholopov.github.io/sennheiser/" target="_blank">Открыть</a>
+                              <a href="https://andreykholopov.github.io/sennheiser/" class="content-RU" target="_blank">Открыть</a>
+                              <a href="https://andreykholopov.github.io/sennheiser/" class="content-EN" target="_blank">Link</a>
                            </div>
                         </div>
                      </li>
@@ -227,10 +289,12 @@
                         <img src="./images/Portfolio/ChikaraBar.jpg" alt="Chikara Bar">
                         <div class="portfolo-cells__content">
                            <h3>Chikara Bar</h3>
-                           <p>Простой лэндинг созданный с использованием HTML5, CSS3, SASS, Javascript и адаптивной версткой</p>
+                           <p class="content-RU">Простой лэндинг созданный с использованием HTML5, CSS3, SASS, Javascript и адаптивной версткой</p>
+                           <p class="content-EN">Simple landing page created using HTML5, CSS3, SASS, Javascript and adaptive layout</p>
                            <div class="buttons">
                               <a href="https://github.com/AndreyKholopov/Chikara_Bar" target="_blank">GitHub</a>
-                              <a href="https://andreykholopov.github.io/Chikara_Bar/" target="_blank">Открыть</a>
+                              <a href="https://andreykholopov.github.io/Chikara_Bar/" class="content-RU" target="_blank">Открыть</a>
+                              <a href="https://andreykholopov.github.io/Chikara_Bar/" class="content-EN" target="_blank">Link</a>
                            </div>
                         </div>
                      </li>
@@ -238,11 +302,14 @@
                      <li>
                         <img src="./images/Portfolio/Tetris.jpg" alt="Tetris">
                         <div class="portfolo-cells__content">
-                           <h3>Tetris</h3>
-                           <p>Тетрис написанный с использованием чистого (без использования Фреймворков) Javascript + HTML5</p>
+                           <h3 class="content-RU">Тетрис</h3>
+                           <h3 class="content-EN">Tetris</h3>
+                           <p class="content-RU">Тетрис написанный с использованием чистого (без использования Фреймворков) Javascript + HTML5</p>
+                           <p class="content-EN">Tetris written using pure (without using frameworks) Javascript + HTML5</p>
                            <div class="buttons">
                               <a href="https://github.com/AndreyKholopov/TETRIS/" target="_blank">GitHub</a>
-                              <a href="https://andreykholopov.github.io/TETRIS/" target="_blank">Открыть</a>
+                              <a href="https://andreykholopov.github.io/TETRIS/" class="content-RU" target="_blank">Открыть</a>
+                              <a href="https://andreykholopov.github.io/TETRIS/" class="content-EN" target="_blank">Link</a>
                            </div>
                         </div>
                      </li>
@@ -251,10 +318,12 @@
                         <img src="./images/Portfolio/GraffPink.jpg" alt="GraffPink">
                         <div class="portfolo-cells__content">
                            <h3>GraffPink</h3>
-                           <p>Простой лэндинг с использованием HTML5, CSS3, jQuery и адаптивной версткой</p>
+                           <p class="content-RU">Простой лэндинг с использованием HTML5, CSS3, jQuery и адаптивной версткой</p>
+                           <p class="content-EN">Simple landing page using HTML5, CSS3, jQuery and adaptive layout</p>
                            <div class="buttons">
                               <a href="https://github.com/AndreyKholopov/Graff_Pink" target="_blank">GitHub</a>
-                              <a href="https://andreykholopov.github.io/Graff_Pink/" target="_blank">Открыть</a>
+                              <a href="https://andreykholopov.github.io/Graff_Pink/" class="content-RU" target="_blank">Открыть</a>
+                              <a href="https://andreykholopov.github.io/Graff_Pink/" class="content-EN" target="_blank">Link</a>
                            </div>
                         </div>
                      </li>
@@ -263,10 +332,12 @@
                         <img src="./images/Portfolio/Joomhost.jpg" alt="Joomhost">
                         <div class="portfolo-cells__content">
                            <h3>Joomhost</h3>
-                           <p>Простой лэндинг с использованием HTML5, CSS3, jQuery и адаптивной версткой</p>
+                           <p class="content-RU">Простой лэндинг с использованием HTML5, CSS3, jQuery и адаптивной версткой</p>
+                           <p class="content-EN">Simple landing page using HTML5, CSS3, jQuery and adaptive layout</p>
                            <div class="buttons">
                               <a href="https://github.com/AndreyKholopov/Joomhost" target="_blank">GitHub</a>
-                              <a href="https://andreykholopov.github.io/Joomhost/" target="_blank">Открыть</a>
+                              <a href="https://andreykholopov.github.io/Joomhost/" class="content-RU" target="_blank">Открыть</a>
+                              <a href="https://andreykholopov.github.io/Joomhost/" class="content-EN" target="_blank">Link</a>
                            </div>
                         </div>
                      </li>
@@ -287,7 +358,8 @@
                      </a></li>
                      <li><a href="tel:+89152852225">
                         <i class="fas fa-phone"></i>
-                        <p>Телефон: 8-(915)-285-22-25</p>
+                        <p class="content-RU">Телефон: 8-(915)-285-22-25</p>
+                        <p class="content-EN">Phone: 8-(915)-285-22-25</p>
                      </a></li>
                      <li><a href="https://github.com/AndreyKholopov?tab=repositories" target="_blank">
                         <i class="fab fa-github-alt"></i>
